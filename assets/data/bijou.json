@@ -1,0 +1,44 @@
+{
+    "produits": [
+        {
+            "id": 0,
+            "name": "rouge",
+            "prix": 100,
+            "etoile": 4,
+            "disponibilité": 3,
+            "imageUrl": "img/bijou/boucles-carre-martele-.jpg"
+        },
+        {
+            "id": 0,
+            "name": "rouge",
+            "prix": 90,
+            "etoile": 3,
+            "disponibilité": 1,
+            "imageUrl": "img/bijou/boucles-d-oreilles-demi-soleil-dore-et-noir-.jpg"
+        },
+        {
+            "id": 0,
+            "name": "rouge",
+            "prix": 175,
+            "etoile": 5,
+            "disponibilité": 3,
+            "imageUrl": "img/bijou/boucles-d-oreilles-forme-goutte-d-eau-dorees.jpg"
+        },
+        {
+            "id": 0,
+            "name": "rouge",
+            "prix": 180,
+            "etoile": 4,
+            "disponibilité": 6,
+            "imageUrl": "img/bijou/boucles-d-oreilles-pendantes-dorees-.jpg"
+        },
+        {
+            "id": 0,
+            "name": "rouge",
+            "prix": 180,
+            "etoile": 4,
+            "disponibilité": 6,
+            "imageUrl": "img/bijou/boucles-soleil-.jpg"
+        }
+    ]
+}

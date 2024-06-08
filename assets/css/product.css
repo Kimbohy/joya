@@ -1,0 +1,98 @@
+.pages{
+    margin-bottom: 1px;
+}
+.affichage{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.affichage img{
+    width: 100%;
+}
+.link{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 18%;
+    padding: 20px;
+    background-color: #fff;
+}
+.link p{
+    margin: 5px;
+}
+.link p i{
+    font-size: 15px;
+}
+.link p a{
+    text-decoration: none;
+    color: #000;
+    font-family: Open Sans Condensed;
+    font-size: 15px;
+}
+
+#onpage{
+    color: #d5959e;
+}
+.contenu-page{
+    margin: 5% 15%;
+}
+.message{
+    padding: 20px;
+    background-color: #f1f1f1;
+    font-family: Open Sans Condensed;
+    color: #474747;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0 5.5%;
+
+}
+.recherche{
+    margin-top: 100px;
+    text-align: center;
+}
+.titre-recherche{
+    font-weight: 700;
+    font-size: 15px;
+    font-family: Open Sans Condensed;
+    color: #808080;
+    margin: 20px 0;
+}
+.recherche form{
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.recherche input{
+    border: none;
+    padding: 15px;
+}
+.recherche input[type="text"]{
+    width: 90%;
+    outline: none;
+    background-color: transparent;
+    font-family: Open Sans Condensed;
+    font-size: 15px;
+    color: #222;
+}
+.recherche form button{
+    width: 10%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: none;
+    background-color: #d5959e;
+}
+.recherche form button i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

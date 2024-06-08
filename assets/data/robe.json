@@ -1,0 +1,45 @@
+{
+    "produits": [
+        {
+            "id": 0,
+            "name": "rouge",
+            "prix": 200,
+            "etoile": 4,
+            "disponibilité": 3,
+            "imageUrl": "img/robe/james-lewis-ohiyigDmlYc-unsplash.jpg"
+        },
+        {
+            "id": 1,
+            "name": "rouge",
+            "prix": 250,
+            "etoile": 3,
+            "disponibilité": 2,
+            "imageUrl": "img/robe/junior-reis-_vmoFgZc8c0-unsplash.jpg"
+        },
+        {
+            "id": 1,
+            "name": "rouge",
+            "prix": 250,
+            "etoile": 3,
+            "disponibilité": 2,
+            "imageUrl": "img/robe/r-n-tyfqOL1FAQc-unsplash.jpg"
+        },
+        {
+            "id": 1,
+            "name": "rouge",
+            "prix": 250,
+            "etoile": 3,
+            "disponibilité": 2,
+            "imageUrl": "img/robe/tamara-bellis-8Aq_zfMHPbU-unsplash.jpg"
+        },
+        {
+            "id": 1,
+            "name": "rouge",
+            "prix": 250,
+            "etoile": 3,
+            "disponibilité": 2,
+            "imageUrl": "img/robe/vicky-cheng-4mLKBKMPoHo-unsplash.jpg"
+        }
+
+    ]
+}

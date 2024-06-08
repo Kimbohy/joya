@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="../css/accueil.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <script src="../script/productHub.js" defer></script>
+    <title>Joya</title>
+
+</head>
+<body>
+    <header>
+        <div class="overview-basket">
+            <div>
+                <img src="../img/basket-shopping.png" alt="Shop">
+            </div>
+            <div class="nb_in_basket">
+                <p>0</p>
+            </div>
+        </div>
+        <div class="top-info">
+            <div class="infos">
+                <div class="info">
+                    <img src="../img/ico_customer_service.png" id="ico_customer_service" alt="ico_customer_service">
+                    <div>Service client au : <a href="">06 49 54 94 19</a></div>
+                </div>
+                <div class="info">
+                    <img src="../img/ico_shipping.png" id="ico_shipping" alt="ico_shipping">
+                    <div>Livraison Mondial Relay offerte à partir de 100€</div>
+                </div>
+                <div class="info">
+                    <img src="../img/ico_click_collect.png" id="ico_click_collect.png" alt="ico_click_collect.png">
+                    <div>Click & Collect - La Grande Motte</div>
+                </div>
+            </div>
+        </div>
+        <div class="middle-info">
+            <div class="top-middle">
+                <div class="search">
+                    <form action="#">
+                        <input type="text" placeholder="Faire une recherche dans notre catalogue">
+                        <button type="submit"><img src="../img/rechercher.svg" alt="findSvg" height="15px"></button>
+                    </form>
+                </div>
+                <div class="for_user">
+                    <div class="account">
+                        <a href="">
+                            <i class="icon fa fa-user"></i>
+                            <span>Mon compte</span>
+                            <i class="icon-arrow-down fa fa-sort-down"></i>
+                        </a>
+                        <div class="liste_contenu">
+                            <ul>
+                                <li><i class="icon fa fa-user"> </i> se connecter</li>
+                                <li><i class="icon fa fa-user"> </i> Mon compte</li>
+                                <li><i class="icon fa fa-user"> </i> Check out</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="basket">
+                        <div class="ttle_basket">
+                            <img src="../img/basket-shopping-grey.png" alt="Shop">
+                            <span>Mon panier</span>
+                        </div>
+                        <div class="nb_in_basket">0</div>
+                    </div>
+                </div>
+            </div>
+            <a href="../../index.html">
+            <div class="logo">
+                <img src="../img/joyalestorecom-logo.png" alt="">
+            </div>
+            </a>
+        </div>
+        <div class="pages">
+            <ul>
+                <div class="element">
+                    <a href="">
+                        <li class="page">
+                            <span>PRÊT À PORTER</span>
+                            <i class="icon-arrow-down fa fa-sort-down"></i>
+                        </li>
+                    </a>
+                    <div class="contenu">
+                        <ul>
+                            <a  href="#" onclick="changePage('robe'); return false;"><li>Robes</li></a>
+                            <a href="#" onclick="changePage('jupe'); return false;"><li>Jupes</li></a>
+                            <a  href="#" onclick="changePage(); return false;"><li>Pantalons & Shorts</li></a>
+                            <a  href="#" onclick="changePage(); return false;"><li>Vestes & Manteaux</li></a>
+                            <a  href="#" onclick="changePage(); return false;"><li>Tee-shirt</li></a>
+                            <a  href="#" onclick="changePage(); return false;"><li>Débardeurs</li></a>
+                            <a  href="#" onclick="changePage(); return false;"><li>Chemisiers</li></a>
+                            <a  href="#" onclick="changePage(); return false;"><li>Pulls & Gilets</li></a>
+                            <a  href="#" onclick="changePage(); return false;"><li>Drop de la semaine</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="element">
+                    <a href="">
+                        <li class="page">
+                            <span>CHAUSSURES</span>   
+                        </li>
+                    </a>
+                    <div class="contenu">
+                        <ul>
+                            <a  href="#" onclick="changePage(); return false;"><li>Baskets</li></a>
+                            <a  href="#" onclick="changePage(); return false;"><li>Escarpins</li></a>
+                            <a  href="#" onclick="changePage(); return false;"><li>Sandales</li></a>
+                            <a  href="#" onclick="changePage(); return false;"><li>Bottes & Bottines</li></a>
+                            <a  href="#" onclick="changePage(); return false;"><li>Mocassins</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="element">
+                    <a href="">
+                        <li class="page">
+                            <span>ACCESSOIRES</span>
+                        </li>
+                    </a>
+                    <div class="contenu">
+                        <ul>
+                            <a  href="#" onclick="changePage(); return false;"><li>Ceintures</li></a>
+                            <a  href="#" onclick="changePage(); return false;"><li>Lunettes</li></a>
+                            <a  href="#" onclick="changePage(); return false;"><li>Casquettes & Chapeaux</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="element">
+                    <a href="">
+                        <li class="page">
+                            <span>SAC & PETITE MAROQUINERIE</span>
+                            <i class="icon-arrow-down fa fa-sort-down"></i>
+                        </li>
+                    </a>
+                    <div class="contenu">
+                        <ul>
+                            <a href="#" onclick="changePage(); return false;"><li>Sacs à bandoulière</li></a>
+                            <a href="#" onclick="changePage(); return false;"><li>Sacs cabas</li></a>
+                            <a href="#" onclick="changePage(); return false;"><li>Pochettes</li></a>
+                            <a href="#" onclick="changePage(); return false;"><li>Portefeuilles & Monnaie</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="element">
+                    <a href="#" onclick="changePage('bijou'); return false;">
+                        <li class="page">
+                            <p>BIJOUX</p>
+                        </li>
+                    </a>
+                </div>
+                <div class="element">
+                    <a href="#" onclick="changePage(); return false;">
+                        <li class="page">
+                            <p>HOMME</p>
+                        </li>
+                    </a>
+                </div>
+                <div class="element">
+                    <a href="">
+                        <li class="page">
+                            <a>NOUVELLE COLLECTION</a>
+                        </li>
+                    </a>
+                </div>
+                <div class="element">
+                    <a href="#" onclick="changePage(); return false;">
+                        <li class="page">
+                            <p>PROMO</p>
+                        </li>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="center">
+        <div class="affichage">
+            <img src="../img/bg-breadcrumb.jpg" alt="">
+            <div class="link">
+                <!-- path place -->
+            </div>
+        </div>
+        <div class="contenu-page">
+            
+            
+            <div class="message">
+                <p>Votre boutique en ligne de Sacs Cabas parmis tous les Sacs et Petite maroquinerie. Commandez en ligne et faites vous livrer ou bien profitez de notre service Click and Collect afin de venir récuperer votre commande dans votre boutique vetement femme en ligne | Joya le store</p>
+            </div>
+            <div class="article">
+                <!-- product -->
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer>
+        <div class="top-footer">
+            <img src="../img/banner_magasin_lagrandemotte.jpg" alt="">
+        </div>
+        <div class="middle-footer">
+            <div class="first-part">
+                <div class="propos">
+                    <img src="../img/joyalestorecom-logo.png" alt="">
+                    <h2>À PROPOS DE NOUS</h2>
+                    <div class="details">
+                        <i class="fa fa-home"></i>
+                        <div>25 Quai Charles de Gaulle, LA GRANDE MOTTE, France</div>
+                    </div>
+                    <div class="details">
+                        <i class="fa fa-phone"></i>
+                        <div>06 49 54 94 19</div>
+                    </div>
+                    <div class="details">
+                        <i class="fa fa-envelope"></i>
+                        <div><a href="">no-reply@joyalestore.com</a></div>
+                    </div>
+                </div>
+                <div class="categorie">
+                    <h2>CATÉGORIE</h2>
+                    <ul>
+                        <li>Prêt à porter</li>
+                        <li>Chaussures</li>
+                        <li>Accessoires</li>
+                        <li>Sacs & Petite maroquinerie</li>
+                        <li>Carte cadeau</li>
+                    </ul>
+                </div>
+                <div class="informations">
+                    <h2>INFORMATIONS</h2>
+                    <ul>
+                        <li>Mentions légales</li>
+                        <li>Conditions d'utilisation et de vente</li>
+                        <li>Paiement sécurisé</li>
+                        <li>Retour et échanges</li>
+                        <li>Contactez-nous</li>
+                    </ul>
+                </div>
+                <div class="suivi">
+                    <h2>SUIVEZ NOUS</h2>
+                    <div class="reseau">
+    
+                    </div>
+                    <div class="details">
+                        <img src="../img/logo-instagram-joyalestore.png" alt="">
+                        <div> Retrouvez Joya le Store sur Instagram !</div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-part">
+                <h2>Inscription à la newsletter </h2>
+                <p>Vous pouvez vous désinscrire à tout moment. Vous trouverez pour cela nos informations de contact dans les conditions d'utilisation du site.</p>
+                <form action="#">
+                    <input type="email" placeholder="VOTRE E-MAIL...">
+                    <input type="submit" value="SOUSCRIRE">
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <span class="creation">© 2024 - Créé par l'ANFCI </span>
+        </div>
+        <img src="../img/bijou/" alt="">
+    </footer>
+</body>
+</html>

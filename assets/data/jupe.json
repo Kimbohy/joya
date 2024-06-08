@@ -1,0 +1,36 @@
+{
+    "produits": [
+        {
+            "id": 0,
+            "name": "rouge",
+            "prix": 100,
+            "etoile": 4,
+            "disponibilité": 3,
+            "imageUrl": "img/jupe/ali-ansari-zgNuSWgMlnY-unsplash.jpg"
+        },
+        {
+            "id": 0,
+            "name": "rouge",
+            "prix": 90,
+            "etoile": 3,
+            "disponibilité": 1,
+            "imageUrl": "img/jupe/joshua-koblin-Mehis2rat7c-unsplash.jpg"
+        },
+        {
+            "id": 0,
+            "name": "rouge",
+            "prix": 175,
+            "etoile": 5,
+            "disponibilité": 3,
+            "imageUrl": "img/jupe/laura-chouette-WLSiDqaBeuc-unsplash.jpg"
+        },
+        {
+            "id": 0,
+            "name": "rouge",
+            "prix": 180,
+            "etoile": 4,
+            "disponibilité": 6,
+            "imageUrl": "img/jupe/logan-weaver-lgnwvr-9A_3xUlqywQ-unsplash.jpg"
+        }
+    ]
+}
