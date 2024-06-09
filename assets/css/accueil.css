@@ -681,3 +681,53 @@ footer{
     height: 30px;
     margin-right: 5px;
 }
+
+/* ---------------------------------- */
+
+#result{
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    width: 67vw;
+    border: 2px solid;
+    border-color: #d5959e;
+    padding: 2%;
+}
+.opacity{
+    position: absolute;
+    top: 0;
+    z-index:1;
+    background-color: #2525258e;
+    width:100vw;
+    height: 322%;
+}
+.confirm{
+    border: none;
+    width:100px;
+    height: 50px;
+    margin-left: 80%;
+    color: white;
+    background-color: #D5959E;
+    font-weight: bold;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~ */
+
+#PanierRender{
+    display: none;
+    padding: 4%;
+    position: absolute;
+    left: -300px;
+    top: 50px;
+    width:fit-content;
+    height: fit-content;
+    background-color: white;
+    border: #D5959E 3px solid;
+}
+#PanierRender button{
+    background-color: #d5959e;
+    border: none;
+    color: white;
+    width: 90px;
+    height: 30px;
+}

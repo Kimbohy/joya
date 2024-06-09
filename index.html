@@ -12,11 +12,17 @@
 <body>
     <header>
         <div class="overview-basket">
-            <div>
+            <div onclick="panier()">
                 <img src="./assets/img/basket-shopping.png" alt="Shop">
             </div>
-            <div class="nb_in_basket">
-                <p>0</p>
+            <div class="nb_in_basket" onclick="panier()">
+                <p id="panierStock">0</p>
+            </div>
+            <div id="PanierRender">
+                <ul id="panierList">
+                    <!-- panier -->
+                </ul>
+                <button id="masquer" class="element" onclick="masquer()">MASQUER</button>
             </div>
         </div>
         <div class="top-info">

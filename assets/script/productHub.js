@@ -26,7 +26,6 @@ const addProduct = (produits, container) => {
     container.innerHTML = '';
     produits.forEach(produit => {
         let url = window.location.href.includes('index.html') ? "./assets/" + produit.imageUrl : "../" + produit.imageUrl;
-        console.log(produit);
         container.innerHTML += `
         <div class="nouveaute">
             <div class="photo"  onclick="imageClick('${url}','${produit.name}','${produit.prix}')">
@@ -68,10 +67,11 @@ window.onload = () => {
 
 function imageClick(imageUrl, _name, prix) {
     container = document.querySelector('.article');
+    let path='..';
     if (container == null) {
         container = document.querySelector('.block_nouveaute');
+        path='assets';
     }
-    console.log("clicked");
     container.innerHTML = `
     <div class="new">
     <div class="infoprod">
@@ -92,28 +92,89 @@ function imageClick(imageUrl, _name, prix) {
                 </select> <br><br>
                 <span>Quantite</span>
                 <input id="quantite" type="number" value="1" min="1"> <br><br>
-                <button id="ajout">AJOUTER AU PANIER</button>
+                <button id="ajout" onclick="ajout('${_name}','${prix}')">AJOUTER AU PANIER</button>
             </div>
         </div>
     </div>
     <ul>
         <li>
-            <img src="./../img/rea_customer_service.png" alt="" class="miniIcon">
+            <img src="./${path}/img/rea_customer_service.png" alt="" class="miniIcon">
             <span>Service  client au 06 54 94 19</span>
         </li>
         <li>
-            <img src="./../img/reassurance-joya-le-store-moyens-paiements.png" alt=""class="miniIcon">
+            <img src="./${path}/img/reassurance-joya-le-store-moyens-paiements.png" alt=""class="miniIcon">
             <span>Paiement sécurisé &3x sans frais avec Aima</span>
         </li>
         <li>
-            <img src="./../img/rea_pdt_shipping.png" alt="" class="miniIcon">
+            <img src="./${path}/img/rea_pdt_shipping.png" alt="" class="miniIcon">
             <span>Livraison offerte avec Mondial Relay à partir de 100 €</span>
         </li>
         <li>
-            <img src="./../img/rea_click_collect.png" alt="" class="miniIcon">
+            <img src="./${path}/img/rea_click_collect.png" alt="" class="miniIcon">
             <span>Click et collect à la Grande Motte</span>
         </li>
     </ul>
     </div>
     `;
+}
+
+function ajout(_name ,prix) {
+    // clique sur le bouton ajout
+    let pointure=parseFloat(document.getElementById("size").value)
+    let quantite=parseFloat(document.getElementById("quantite").value)
+    price=parseFloat(prix)
+    let totalPrice=price*quantite;
+    document.querySelector('.article').innerHTML +=`
+                                <div id="result"></div>`;
+    document.querySelector('body').innerHTML +=`
+                              <div class="opacity" onclick="back()"></div>`;
+                             console.log("click");
+    document.getElementById("result").innerHTML=`<p>vous avez acheté le produit : ${_name}</p> <br> 
+                                   <p>De pointure : ${pointure}</p> <br> <p>Quantité : ${quantite}</p> <br> <h2>TOTALPRICE :${totalPrice} €</h2>
+                                   <button class="confirm">CONFIRMER</button>`;
+    
+    document.querySelector('.confirm').onclick=function(){
+       let panier=parseInt(document.getElementById("panierStock").innerText);
+       panier=panier+1;
+       document.getElementById("panierStock").textContent=panier;
+
+
+    // Get the product information
+    let productInfo = {
+        name: _name,
+        price: prix,
+        size: document.getElementById("size").value,
+        quantity: document.getElementById("quantite").value,
+        url: document.querySelector('.imgProd img').src
+    };
+    let newelement=document.createElement('li');
+    newelement.innerHTML=`<p>vous avez acheté le produit : ${_name}</p> <br> 
+    <p>De pointure : ${pointure}</p> <br> <p>Quantité : ${quantite}</p> <br> <h2>TOTALPRICE :${totalPrice} €</h2>`;
+    let listPan=document.getElementById("panierList");
+    listPan.appendChild(newelement);
+    }
+}
+
+const back = () => {
+    document.querySelector('#result').remove();
+    document.querySelector('.opacity').remove();
+}
+
+// change the property of #panierRender to display: block or none
+function panier(){
+changeStatus("PanierRender");
+}
+
+
+function changeStatus(id){
+    let panier=document.getElementById(id);
+    if(panier.style.display=="none"){
+        panier.style.display="block";
+    } else {
+        panier.style.display="none";
+    }
+}
+
+const masquer = () => {
+    document.getElementById("PanierRender").style.display="none";
 }
