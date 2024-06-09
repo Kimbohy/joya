@@ -633,3 +633,51 @@ footer{
 @media  (max-width: 1000px) {
       
 }
+
+
+/* --------------------------------------------------- */
+.new {
+    display: flex;
+    flex-direction:column;
+}
+
+.infoprod{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 4%;
+    height: max-content;
+    z-index: 0;
+}
+.imgProd {
+    width: 35em;
+    height: fit-content;
+    margin-right: 2%;
+}
+.imgProd img{
+    width: 100%;
+}
+.prodInfo{
+    width: 35em;
+    height: fit-content;
+}
+.titreETprix{
+    color: #D5959E;
+    border-bottom: 2px solid;
+    border-color: #d5959e;
+    margin-bottom: 3em;
+}
+.ajoutPanier button{
+    border: none;
+    width: 200px;
+    height: 50px;
+    background-color: #d5959e;
+    color:white;
+}
+
+.miniIcon{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}

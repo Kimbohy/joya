@@ -1,0 +1,36 @@
+{
+    "produits": [
+        {
+            "id": 0,
+            "name": "bleu",
+            "prix": 90,
+            "etoile": 2,
+            "disponibilité": 3,
+            "imageUrl": "img/short/alex-sheldon-s26uqKQSLyg-unsplash.jpg"
+        },
+        {
+            "id": 0,
+            "name": "bleu",
+            "prix": 104,
+            "etoile": 4,
+            "disponibilité": 2,
+            "imageUrl": "img/short/karsten-winegeart-mCEwW1lZyuA-unsplash.jpg"
+        },
+        {
+            "id": 0,
+            "name": "bleu",
+            "prix": 95,
+            "etoile": 2,
+            "disponibilité": 3,
+            "imageUrl": "img/short/pedro-mexicano-yRUlUSGgUig-unsplash.jpg"
+        },
+        {
+            "id": 0,
+            "name": "bleu",
+            "prix": 90,
+            "etoile": 2,
+            "disponibilité": 3,
+            "imageUrl": "img/short/tim-bernhard-ArHsOWazpeU-unsplash.jpg"
+        }
+    ]
+}

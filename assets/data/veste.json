@@ -1,0 +1,44 @@
+{
+    "produits": [
+        {
+            "id": 0,
+            "name": "bleu",
+            "prix": 90,
+            "etoile": 2,
+            "disponibilité": 3,
+            "imageUrl": "img/verste/joshua-rondeau-QuEKZs3JDvY-unsplash.jpg"
+        },
+        {
+            "id": 1,
+            "name": "rouge",
+            "prix": 100,
+            "etoile": 3,
+            "disponibilité": 5,
+            "imageUrl": "img/verste/karsten-winegeart-VeMo9ePq4KM-unsplash.jpg"
+        },
+        {
+            "id": 2,
+            "name": "vert",
+            "prix": 110,
+            "etoile": 4,
+            "disponibilité": 2,
+            "imageUrl": "img/verste/marcel-strauss-hwLiTFTGJCY-unsplash.jpg"
+        },
+        {
+            "id": 3,
+            "name": "jaune",
+            "prix": 120,
+            "etoile": 5,
+            "disponibilité": 1,
+            "imageUrl": "img/verste/toa-heftiba-ua9ReZlzcIE-unsplash.jpg"
+        },
+        {
+            "id": 4,
+            "name": "noir",
+            "prix": 130,
+            "etoile": 1,
+            "disponibilité": 4,
+            "imageUrl": "img/verste/philipp-lansing-WIWVM_Z1x7c-unsplash.jpg"
+        }
+    ]
+}
