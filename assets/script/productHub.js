@@ -162,11 +162,16 @@ function imageClick(imageUrl, _name, prix) {
 
 function ajout(_name ,prix) {
     // clique sur le bouton ajout
-    let pointure=parseFloat(document.getElementById("size").value)
+    let pointure=document.getElementById("size").value
+    console.log(pointure);
     let quantite=parseFloat(document.getElementById("quantite").value)
     price=parseFloat(prix)
     let totalPrice=price*quantite;
-    document.querySelector('.article').innerHTML +=`
+    let article=document.querySelector('.article');
+    if(article==null){
+        article=document.querySelector('.block_nouveaute');
+    }
+    article.innerHTML +=`
                                 <div id="result"></div>`;
     document.querySelector('body').innerHTML +=`
                               <div class="opacity" onclick="back()"></div>`;
