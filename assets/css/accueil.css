@@ -2,6 +2,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
 @font-face {
     font-family: Open Sans Condensed;
     src: url('../fonts/open-sans-condensed-2/OpenSansCondensed-Light.ttf');
@@ -322,6 +327,7 @@ ul {
     border-collapse: collapse;
     font-family: Open Sans Condensed;
 }
+
 .nouveau-titre{
     margin: 10vh auto 2vh auto;
     text-align: center;
@@ -633,9 +639,7 @@ footer{
     font-family: Open Sans Condensed;
     font-size: 14px;
 }
-@media  (max-width: 1000px) {
-      
-}
+
 
 
 /* --------------------------------------------------- */
@@ -744,4 +748,54 @@ footer{
 .annuler{
     color: white;
     font-size: 18px;
+}
+
+.burger{
+    display: none;
+}
+
+@media (max-width: 1500px){
+    .block_nouveaute , .article{
+        grid-template-columns: repeat(3,1fr);
+        width: 100vw;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1080px) {
+    .block_nouveaute , .article{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .nouveaute{
+        width: 40vw;
+    }
+    h1 {
+        width: 100vw;
+    }
+    .burger {
+        display: block;
+    }
+    .pages ul {
+        display: none;
+    }
+    .element {
+        width: fit-content;
+    }
+    .contenu{
+        position: relative;
+    }
+    .contenu ul{
+        display: block;
+    }
+}
+
+@media (max-width: 750px){
+    .block_nouveaute , .article{
+        grid-template-columns: repeat(1,0fr);
+    }
+    .nouveaute{
+        width: 80vw;
+        height: fit-content;
+    }
 }

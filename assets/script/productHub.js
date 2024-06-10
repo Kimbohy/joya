@@ -36,17 +36,16 @@ function loadPanier() {
 // change the property of #panierRender to display: block or none
 function panier(){
     changeStatus("PanierRender");
-    }
+}
     
-    
-    function changeStatus(id){
-        let panier=document.getElementById(id);
-        if(panier.style.display=="none"){
-            panier.style.display="block";
-        } else {
-            panier.style.display="none";
-        }
+function changeStatus(id){
+    let panier=document.getElementById(id);
+    if(panier.style.display=="none"){
+        panier.style.display="block";
+    } else {
+        panier.style.display="none";
     }
+}
 
 let productData = [];
 
@@ -81,7 +80,6 @@ const addProduct = (produits, container) => {
     setPath();
 }
 
-
 const setPath = () => {
     const pathContainer = document.querySelector('.link');
     let curentPage = localStorage.getItem('selectedPage');
@@ -93,7 +91,6 @@ const setPath = () => {
                 <p><a href="" id="onpage">${curentPage}</a></p>
                 `;
 };
-
 
 window.onload = () => {
     if (window.location.href.includes('index.html')) {
@@ -228,4 +225,14 @@ const back = () => {
 
 const masquer = () => {
     document.getElementById("PanierRender").style.display="none";
+}
+
+
+
+const show = () => {
+    if (document.querySelector('.pages ul').style.display == "none") {
+        document.querySelector('.pages ul').style.display = "block";
+    } else {
+        document.querySelector('.pages ul').style.display = "none";
+    }
 }
