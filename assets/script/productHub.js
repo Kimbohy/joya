@@ -8,6 +8,22 @@ function changePage(page) {
     }
 }
 
+function savePanier() {
+    let panier = document.getElementById("panierStock").innerText;
+    let panierList = document.getElementById("panierList").innerHTML;
+    localStorage.setItem('panier', panier);
+    localStorage.setItem('panierList', panierList);
+    console.log(localStorage.getItem('panier'));
+    console.log(localStorage.getItem('panierList'));
+}
+
+function loadPanier() {
+    let panier = localStorage.getItem('panier');
+    let panierList = localStorage.getItem('panierList');
+    document.getElementById("panierStock").textContent = panier;
+    document.getElementById("panierList").innerHTML = panierList;
+}
+
 let productData = [];
 
 function fetchProduct(page, container) {
@@ -59,9 +75,11 @@ window.onload = () => {
     if (window.location.href.includes('index.html')) {
         let container = document.querySelector(".block_nouveaute");
         fetchProduct('robe', container);
+        loadPanier();
     } else {
         let container = document.querySelector(".article");
         fetchProduct(localStorage.getItem('selectedPage'), container);
+        loadPanier();
     }
 }
 
@@ -152,6 +170,7 @@ function ajout(_name ,prix) {
     <p>De pointure : ${pointure}</p> <br> <p>Quantité : ${quantite}</p> <br> <h2>TOTALPRICE :${totalPrice} €</h2>`;
     let listPan=document.getElementById("panierList");
     listPan.appendChild(newelement);
+    savePanier();
     }
 }
 
