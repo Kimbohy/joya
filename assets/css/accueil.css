@@ -15,6 +15,10 @@
     src: url('../fonts/amatic-sc-font/AmaticSC-Bold.ttf');
 }
 
+ul {
+    list-style: none;
+}
+
 :root {
     --padd: 75%;
 }
@@ -720,6 +724,8 @@ footer{
     left: -300px;
     top: 50px;
     width:fit-content;
+    min-width: 500%;
+    min-height: 200%;
     height: fit-content;
     background-color: white;
     border: #D5959E 3px solid;

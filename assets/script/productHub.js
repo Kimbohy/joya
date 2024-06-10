@@ -15,14 +15,38 @@ function savePanier() {
     localStorage.setItem('panierList', panierList);
     console.log(localStorage.getItem('panier'));
     console.log(localStorage.getItem('panierList'));
+
+    // localStorage.removeItem('panier');
+    // localStorage.removeItem('panierList');
+    // console.log(localStorage.getItem('panier'));
 }
 
 function loadPanier() {
     let panier = localStorage.getItem('panier');
     let panierList = localStorage.getItem('panierList');
-    document.getElementById("panierStock").textContent = panier;
+    if (panier)
+        {
+            document.getElementById("panierStock").textContent = panier;
+        } else {
+            document.getElementById("panierStock").textContent = 0;
+        }
     document.getElementById("panierList").innerHTML = panierList;
 }
+
+// change the property of #panierRender to display: block or none
+function panier(){
+    changeStatus("PanierRender");
+    }
+    
+    
+    function changeStatus(id){
+        let panier=document.getElementById(id);
+        if(panier.style.display=="none"){
+            panier.style.display="block";
+        } else {
+            panier.style.display="none";
+        }
+    }
 
 let productData = [];
 
@@ -166,32 +190,34 @@ function ajout(_name ,prix) {
         url: document.querySelector('.imgProd img').src
     };
     let newelement=document.createElement('li');
-    newelement.innerHTML=`<p>vous avez acheté le produit : ${_name}</p> <br> 
-    <p>De pointure : ${pointure}</p> <br> <p>Quantité : ${quantite}</p> <br> <h2>TOTALPRICE :${totalPrice} €</h2>`;
+    let id = `item${document.getElementById("panierStock").textContent}`
+    newelement.innerHTML=`
+        <div id="${id}">
+            <p>vous avez acheté le produit : ${_name}</p> <br> 
+            <p>De pointure : ${pointure}</p> <br>
+            <p>Quantité : ${quantite}</p> <br> 
+            <h3>PRIX :${totalPrice} €</h3>
+            <button class="annuler" onclick="annuler('${id}')"></button>
+        </div>
+        `;
     let listPan=document.getElementById("panierList");
     listPan.appendChild(newelement);
     savePanier();
     }
 }
 
+// delet a product from the panier
+function annuler(id){
+    let panier=parseInt(document.getElementById("panierStock").innerText);
+    panier=panier-1;
+    document.getElementById("panierStock").textContent=panier;
+    document.getElementById(id).remove();
+    savePanier();
+}
+
 const back = () => {
     document.querySelector('#result').remove();
     document.querySelector('.opacity').remove();
-}
-
-// change the property of #panierRender to display: block or none
-function panier(){
-changeStatus("PanierRender");
-}
-
-
-function changeStatus(id){
-    let panier=document.getElementById(id);
-    if(panier.style.display=="none"){
-        panier.style.display="block";
-    } else {
-        panier.style.display="none";
-    }
 }
 
 const masquer = () => {
