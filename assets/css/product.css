@@ -35,7 +35,8 @@
     color: #d5959e;
 }
 .contenu-page{
-    margin: 5% 15%;
+    margin: 5% 0;
+    max-width: 1700px;
 }
 .message{
     padding: 20px;

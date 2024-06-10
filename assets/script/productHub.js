@@ -184,6 +184,7 @@ function ajout(_name ,prix) {
        let panier=parseInt(document.getElementById("panierStock").innerText);
        panier=panier+1;
        document.getElementById("panierStock").textContent=panier;
+       back();
 
 
     // Get the product information
@@ -202,7 +203,7 @@ function ajout(_name ,prix) {
             <p>De pointure : ${pointure}</p> <br>
             <p>Quantité : ${quantite}</p> <br> 
             <h3>PRIX :${totalPrice} €</h3>
-            <button class="annuler" onclick="annuler('${id}')"></button>
+            <button class="annuler" onclick="annuler('${id}')">Annuler</button>
         </div>
         `;
     let listPan=document.getElementById("panierList");

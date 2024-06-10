@@ -20,7 +20,7 @@ ul {
 }
 
 :root {
-    --padd: 75%;
+    --padd: 1500px;
 }
 
 .overview-basket{
@@ -321,7 +321,6 @@ ul {
     grid-template-columns: repeat(4,1fr);
     border-collapse: collapse;
     font-family: Open Sans Condensed;
-    padding: 0 5%;
 }
 .nouveau-titre{
     margin: 10vh auto 2vh auto;
@@ -729,6 +728,8 @@ footer{
     height: fit-content;
     background-color: white;
     border: #D5959E 3px solid;
+    overflow-y:scroll;
+
 }
 #PanierRender button{
     background-color: #d5959e;
@@ -736,4 +737,11 @@ footer{
     color: white;
     width: 90px;
     height: 30px;
+}
+#masquer{
+    margin-top: 10px;
+}
+.annuler{
+    color: white;
+    font-size: 18px;
 }
